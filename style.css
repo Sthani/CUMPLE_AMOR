@@ -150,16 +150,16 @@ form button:hover { background: #0277bd; }
 /* --- FOTOS --- */
 #fotos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px; /* menos separación para celulares */
   justify-items: center;
   max-width: 1000px;
   margin: 20px auto;
 }
 
 #fotos img {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -207,6 +207,7 @@ form button:hover { background: #0277bd; }
   position:relative;
 }
 
+/* Flechas */
 .event.left .content::after {
   content:"";
   position:absolute;
@@ -273,21 +274,24 @@ form button:hover { background: #0277bd; }
   #flork-main, #letter { max-width: 90%; }
 
   /* Fotos adaptativas móviles */
-  #fotos { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+  #fotos { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:5px; }
   #fotos img { width: 100px; height: 100px; }
 
-  /* Línea de tiempo centrada */
-  .timeline::after { left: 50%; }
+  /* Línea de tiempo centrada móvil */
+  .timeline::after { left:50%; }
   .event, .event.left, .event.right {
     width: 100% !important;
-    left: 0 !important;
-    text-align: center !important;
-    margin: 10px 0;
+    left:0 !important;
+    text-align:center !important;
+    margin:10px 0;
   }
   .event .content::after { display:none; }
 
-  .subtitulo-amor { font-size: 2.5rem; }
-  .video-container h2 { font-size:2rem; }
-  .video-container { width: 100%; height: auto; }
-  .video-container video { width: 100%; height: auto; }
-}
+.subtitulo-amor { font-size:2.5rem; }
+.video-container h2 { font-size:2rem; }
+.video-container { width: 100%; height: auto; }
+
+
+
+
+
