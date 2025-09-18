@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎉 Cumpleaños Especial 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fondo animado: pastelitos, sombreritos y caritas -->
+<div class="pastelitos">
+  <!-- Pastelitos -->
+  <div class="pastelito" style="left:10%;">🎂</div>
+  <div class="pastelito" style="left:25%;">🧁</div>
+  <div class="pastelito" style="left:40%;">🎂</div>
+  <div class="pastelito" style="left:55%;">🍰</div>
+  <div class="pastelito" style="left:70%;">🎂</div>
+  <div class="pastelito" style="left:85%;">🧁</div>
+
+  <!-- Sombreritos -->
+  <div class="sombrerito" style="left:15%;">🎉</div>
+  <div class="sombrerito" style="left:35%;">🥳</div>
+  <div class="sombrerito" style="left:55%;">🎉</div>
+  <div class="sombrerito" style="left:75%;">🥳</div>
+
+  <!-- Caritas -->
+  <div class="carita" style="left:20%;">😊</div>
+  <div class="carita" style="left:50%;">😄</div>
+  <div class="carita" style="left:80%;">😍</div>
+</div>
+
+<!-- FORMULARIO INICIAL -->
+<section id="form-section">
+  <form id="form">
+    <!-- Título centrado -->
+    <h2 style="text-align:center;">🎉 Bienvenido 💖</h2>
+
+    <!-- Imagen de Flork debajo del título, alineada normalmente -->
+    <div style="margin:20px 0; text-align:center;">
+      <img src="img/plenamiseria.png" alt="Flork" 
+           style="width:300px; max-width:80%;">
+    </div>
+
+    <p>Por favor completa tus datos para continuar:</p>
+    <br>
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label>Apellido:</label>
+    <input type="text" id="apellido" required>
+    <label>Color Favorito:</label>
+    <input type="text" id="color" required>
+    <br><br>
+    <!-- Botón centrado -->
+    <div style="text-align:center;">
+      <button type="submit" style="padding:10px 20px; font-size:1.1rem; cursor:pointer;">
+        Entrar 🎂
+      </button>
+    </div>
+  </form>
+</section>
+
+
+
+
+<!-- SEGUNDA PANTALLA -->
+<section id="main-screen" style="display:none; text-align:center; padding: 20px;">
+
+  <!-- Saludo -->
+  <h1 id="saludo">🎂 ¡FELIZ CUMPLEAÑOS AMOR DE MI VIDA! 💖</h1>
+
+  <!-- Pastel / carta -->
+<div id="letter">
+ <img id="flork-main" src="img/1 (4).png" alt="Flork">
+</div>
+
+
+
+<!-- Botón que abre la carta (aparece cuando se muestra el pastel) -->
+<button id="open-letter" class="btn" style="display:none; margin-bottom:20px;">Abrir aquí</button>
+
+<!-- Contenedor de la carta (oculto hasta que presionen Abrir carta) -->
+<div id="card" class="card" style="display:none; max-width:600px; margin: 0 auto 30px;">
+  <div class="card-content">
+    <h3>Una carta para ti 💌</h3>
+
+    <p>
+      Mi amor, hoy celebramos tu vida y todo lo que eres. Cada día a tu lado es un regalo, y no hay palabras suficientes para expresar lo agradecida que estoy por tenerte en mi vida. Eres mi compañero, mi apoyo y mi alegría, y ver cómo creces, cómo luchas y cómo amas me llena de orgullo y felicidad.
+      <br><br>
+      Quiero que sepas que cada sonrisa tuya ilumina mis días y cada abrazo tuyo me hace sentir en casa. Hoy es tu día, y deseo que cada momento esté lleno de amor, risas y sueños cumplidos. Que Dios te conceda muchísimos años más de vida, salud, alegría, y que puedas cumplir todos tus sueños y anhelos.
+      <br><br>
+      Gracias por ser esa persona increíble que siempre sabe cómo alegrar mi mundo y hacer que todo valga la pena. Que sigas siendo ese amor tan especial en nuestras vidas, iluminando y llenando de felicidad a todos los que tenemos la suerte de conocerte.
+      <br><br>
+      Feliz cumpleaños, mi amor. Que este año te traiga tanta felicidad como la que tú nos das a todos, y que juntos sigamos construyendo recuerdos hermosos, llenos de amor, complicidad y alegría. Te amo con todo mi corazón. 💖
+    </p>
+
+    <!-- Imagen centrada al final de la carta -->
+    <img src="img/6.png" alt="Flork amoroso" 
+         style="display:block; margin: 15px auto; max-width:300px; width:100%; border-radius:10px;">
+
+    <button id="close-card" class="btn">Cerrar carta</button>
+  </div>
+</div>
+
+
+<!-- Fotos / Caritas -->
+<div id="fotos">
+  <img src="img/IMG-20250915-WA0001.jpg" alt="Foto 1">
+  <img src="img/hermanos.jpg" alt="Foto 2">
+  <img src="img/IMG-20250915-WA0003.jpg" alt="Foto 3">
+  <img src="img/IMG-20250915-WA0004.jpg" alt="Foto 4">
+  <img src="img/IMG-20250915-WA0009.jpg" alt="Foto 5">
+  <img src="img/wsp.jpg" alt="Foto 6">
+  <img src="img/cuzco.jpg">
+  <img src="img/IMG-20250915-WA0006.jpg" alt="Foto 8">
+  <img src="img/IMG-20250915-WA0007.jpg" alt="Foto 9">
+  <img src="img/IMG-20250915-WA0008.jpg" alt="Foto 10">
+  <img src="img/IMG-20250915-WA0002.jpg" alt="Foto 11">
+  <img src="img/playa.jpg" alt="Foto 12">
+  <img src="img/cuzco4.jpg" alt="Foto 13">
+  <img src="img/cuzco2.jpg" alt="Foto 14">
+  <img src="img/viaje.jpg" alt="Foto 15">
+  <img src="img/cuzco3.jpg" alt="Foto 16">
+   <img src="img/familia.jpg" alt="Foto 17">
+  <img src="img/cuzco5.jpg" alt="Foto 18">
+  <img src="img/cuzco7.jpg" alt="Foto 19">
+  <img src="img/cuzco2.jpg" alt="Foto 20">
+</div>
+<br>
+<br>
+<!-- Subtítulo después de las fotos -->
+<h2 class="subtitulo-amor">
+  Nuestra línea de amor para ti
+</h2>
+
+<br>
+<br>
+
+<!-- Línea de tiempo vertical -->
+<div class="timeline">
+  <div class="event left">
+    <div class="content">✨ Hoy celebramos la persona increíble en la que te has convertido</div>
+  </div>
+  <div class="event right">
+    <div class="content">🌿 Cada año de tu vida nos inspira y nos llena de alegría</div>
+  </div>
+  <div class="event left">
+    <div class="content">💼 Cada paso que has dado nos llena de orgullo y admiración</div>
+  </div>
+  <div class="event right">
+    <div class="content">❤️ Todo el amor que te tenemos</div>
+  </div>
+  <div class="event left">
+    <div class="content">💌 Cada mensaje y abrazo virtual es un pedacito de nuestro cariño para ti</div>
+  </div>
+  <div class="event right">
+    <div class="content">🌹 Cada mensaje y video que recibes está lleno de amor solo para ti</div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+  <!-- Video final -->
+   <div class="video-container">
+  <h2>🎥 Un regalo muy especial para ti</h2>
+  <video controls>
+    <source src="videos/saludo.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
